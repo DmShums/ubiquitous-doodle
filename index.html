@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="header__left">
+            <img src="img/header-color-blur.svg" alt="" class="header__left-bg-img">
             <div class="header__left-logo">
                 <img src="img/logo.svg" alt="logo" class="logo">
-                <span class="logo-text">Hounter</span>
+                <span class="header__left-logo-text">Hounter</span>
             </div>
             <div class="header__left-text">
-                <h1>Find the place to<br>
-                    live your dreams<br>
-                    easily here</h1>
+                <h1>Find The Place To<br>
+                    Live <span>Your Dreams</span><br>
+                    Easily Here</h1>
                 <p>Everything you need about finding your place to live will be here, where it will be easier for you</p>
             </div>
             <div class="header__left-input">
-                <form action="">
-                    <img src="img/point.svg" alt="point-on-map">
-                    <input type="text" placeholder="Search for the location you want!">
-                    <button type="submit">Search ></button>
-                </form>
+                <img src="img/point.svg" alt="point-on-map">
+                <input type="text" placeholder="Search for the location you want!">
+                <button type="submit"><span>Search</span> <img src="img/arrow_right.svg" alt=""></button>
             </div>
             <div class="header__left-partnership">
                 <span>Our partnership</span>
-                <img src="img/partner1.png" alt="traveloka">
-                <img src="img/partner2.png" alt="ticket">
-                <img src="img/partner3.png" alt="airbnb">
-                <img src="img/partner4.png" alt="tripadvisor">
+                <div class="header__left-partnership-img">
+                    <img src="img/partner1.png" alt="traveloka">
+                    <img src="img/partner2.png" alt="ticket">
+                    <img src="img/partner3.png" alt="airbnb">
+                    <img src="img/partner4.png" alt="tripadvisor">
+                </div>
             </div>
             
         </div>
@@ -38,29 +40,37 @@
             <nav class="header__right-nav">
                 <a href="">About us</a>
                 <a href="">Article</a>
-                <a href="">
+                <div class="header__right-nav-select">
                     <select name="" id="">
                         <option value="">Property</option>
+                        <option value="">House</option>
                     </select>
-                </a>
-                <a href="">Sign Up!</a>
+                    <img src="img/arrow-down.svg" alt="">
+                </div>
+                <a href="" id="sign-up">Sign Up!</a>
             </nav>
-            <img src="img/hero.jpg" alt="hero" class="header__right-bg-img">
+            <!-- <img src="img/hero.jpg" alt="hero" class="header__right-bg-img"> -->
             <div class="header__right-slider">
                 <div class="header__right-slider-elem">
                     <img src="img/small-avatars.png" alt="">
-                    <span>1k+ People</span>
-                    <p>Successfully Getting Home</p>
+                    <div class="header__right-slider-elem-text">
+                        <span>1k+ People</span>
+                        <p>Successfully Getting Home</p>
+                    </div>
                 </div>
                 <div class="header__right-slider-elem">
-                    <img src="header-house.png" alt="header-house">
-                    <span>56 Houses</span>
-                    <p>Sold Monthly</p>
+                    <img src="img/header-house.png" alt="header-house">
+                    <div class="header__right-slider-elem-text">
+                        <span>56 Houses</span>
+                        <p>Sold Monthly</p>
+                    </div>
                 </div>
                 <div class="header__right-slider-elem">
                     <img src="img/header-avatar.png" alt="">
-                    <span>4k+ People</span>
-                    <p>People Looking for New Homes</p>
+                    <div class="header__right-slider-elem-text">
+                        <span>4k+ People</span>
+                        <p>People Looking for New Homes</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,15 +97,15 @@
                     </button>
                 </div>
                 <div class="section__featured-house-upper-nav2">
-                    <button> < </button>
-                    <button> > </button>
+                    <button> <img src="img/arrow-left.svg" alt=""> </button>
+                    <button> <img src="img/arrow-right.svg" alt=""> </button>
                 </div>
             </div>
             <div class="section__featured-house-lower">
                 <div class="section__featured-house-lower-card">
                     <div class="section__featured-house-lower-card-img">
                         <img src="img/featured-house1.jpg" alt="featured house1">
-                        <div class="section__featured-house-lower-card-img-icon">
+                        <div class="section__featured-house-lower-card-img-icon" id="card-img-icon1">
                             <img src="img/fire-icon.svg" alt="fire-icon">
                             <span>Popular</span>
                         </div>
@@ -116,8 +126,8 @@
                 <div class="section__featured-house-lower-card">
                     <div class="section__featured-house-lower-card-img">
                         <img src="img/featured-house2.jpg" alt="featured-house2">
-                        <div class="section__featured-house-lower-card-img-icon">
-                            <img src="img/house-icon.svg" alt="house icon">
+                        <div class="section__featured-house-lower-card-img-icon" id="card-img-icon2">
+                            <img src="img/house-icon-blue.svg" alt="house icon">
                             <span>New House</span>
                         </div>
                     </div>
@@ -137,7 +147,7 @@
                 <div class="section__featured-house-lower-card">
                     <div class="section__featured-house-lower-card-img">
                         <img src="img/featured-avatar3.jpg" alt="featured-house3">
-                        <div class="section__featured-house-lower-card-img-icon">
+                        <div class="section__featured-house-lower-card-img-icon" id="card-img-icon3">
                             <img src="img/wallet-icon.svg" alt="wallet icon">
                             <span>Best Deals</span>
                         </div>
@@ -158,7 +168,7 @@
                 <div class="section__featured-house-lower-card">
                     <div class="section__featured-house-lower-card-img">
                         <img src="img/featured-house4.jpg" alt="featured-house4">
-                        <div class="section__featured-house-lower-card-img-icon">
+                        <div class="section__featured-house-lower-card-img-icon" id="card-img-icon1">
                             <img src="img/fire-icon.svg" alt="fire icon">
                             <span>Popular</span>
                         </div>
@@ -168,7 +178,7 @@
                         <span>$ 22.000.000</span>
                     </div>
                     <div class="section__featured-house-lower-card-user">
-                        <img src="img/featured-avatar4.jpg" alt="featured-avatar4">
+                        <img src="img/featured-avatar4.png" alt="featured-avatar4">
                         <div class="section__featured-house-lower-card-user-text">
                             <p><b>Jenny Wilson</b></p>
                             <p>Preston Rd. Inglewood, Maine 98380</p>
@@ -187,23 +197,28 @@
                 </div>
 
                 <div class="section__house-tour-left-detail">
-                    <span><b>House detail</b></span>
+                    <span class="section__house-tour-left-detail-spn">House detail</span>
                     <div class="section__house-tour-left-detail-icons">
-                        <div class="section__house-tour-left-detail-icons-el">
-                            <img src="img/icon-bedroom.svg" alt="">
-                            <span>4 Bedrooms</span>
+                        <div class="section__house-tour-left-detail-icons-rw1">
+                            <div class="section__house-tour-left-detail-icons-el">
+                                <img src="img/icon-bedroom.svg" alt="">
+                                <span>4 Bedrooms</span>
+                            </div>
+                            <div class="section__house-tour-left-detail-icons-el">
+                                <img src="img/icon-bathroom.svg" alt="">
+                                <span>2 Bathrooms</span>
+                            </div>
                         </div>
-                        <div class="section__house-tour-left-detail-icons-el">
-                            <img src="img/icon-bathroom.svg" alt="">
-                            <span>2 Bathrooms</span>
-                        </div>
-                        <div class="section__house-tour-left-detail-icons-el">
-                            <img src="img/icon-carpot.svg" alt="">
-                            <span>1 Carpot</span>
-                        </div>
-                        <div class="section__house-tour-left-detail-icons-el">
-                            <img src="img/icon-stairs.svg" alt="">
-                            <span>2 Floors</span>
+                        
+                        <div class="section__house-tour-left-detail-icons-rw2">
+                            <div class="section__house-tour-left-detail-icons-el">
+                                <img src="img/icon-carpot.svg" alt="">
+                                <span>1 Carpot</span>
+                            </div>
+                            <div class="section__house-tour-left-detail-icons-el">
+                                <img src="img/icon-stairs.svg" alt="">
+                                <span>2 Floors</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -301,7 +316,7 @@
         <section class="section__selling">
             <div class="section__selling-upper">
                 <span>---See tips and trick from our partnership</span>
-                <h2>Find out more about selling and buying homes</h2>
+                <h2>Find out more about <br>selling and buying homes</h2>
                 <button>
                     More Artikel
                 </button>
@@ -309,7 +324,7 @@
             <div class="section__selling-lower">
                 <div class="section__selling-lower-left">
                     <div class="section__selling-lower-left-card">
-                        <img src="img/about-house-1.jpg" alt="">
+                        <img class="section__selling-lower-left-card-img" src="img/about-house-1.jpg" alt="">
                         <div class="section__selling-lower-left-card-user">
                             <div class="section__selling-lower-left-card-user-img">
                                 <img src="img/about-logo-1.png" alt="">
@@ -324,7 +339,7 @@
                     </div>
                     
                     <div class="section__selling-lower-left-card">
-                        <img src="img/about-house-2.jpg" alt="">
+                        <img class="section__selling-lower-left-card-img" src="img/about-house-2.jpg" alt="">
                         <div class="section__selling-lower-left-card-user">
                             <div class="section__selling-lower-left-card-user-img">
                                 <img src="img/about-logo-2.png" alt="">
@@ -339,7 +354,7 @@
                     </div>
                     
                     <div class="section__selling-lower-left-card">
-                        <img src="img/about-house-3.jpg" alt="">
+                        <img class="section__selling-lower-left-card-img" src="img/about-house-3.jpg" alt="">
                         <div class="section__selling-lower-left-card-user">
                             <div class="section__selling-lower-left-card-user-img">
                                 <img src="img/about-logo-3.png" alt="">
@@ -372,26 +387,36 @@
         </section>
 
         <section class="section__subscribe">
-            <img src="img/subscribe-bg.png" alt="">
+            <!-- <img src="img/subscribe-bg.png" alt=""> -->
             <!-- other small images will be handled later -->
-            <h2>Subscribe For More Info <br>
-                and update from Hounter</h2>
-            <form action="">
-                <img src="img/sub-post-icon.svg" alt="">
-                <input type="text" placeholder="Your email here">
-                <button type="submit">Subscribe Now</button>
-            </form>
+            <div class="section__subscribe-dv">
+                <h2>Subscribe For More Info <br>
+                    and update from Hounter</h2>
+                <form action="">
+                    <img src="img/sub-post-icon.svg" alt="">
+                    <input type="text" placeholder="Your email here">
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
         <div class="footer__additional">
             <div class="footer__additional-logo">
-                <img src="img/logo.svg" alt="logo" class="logo">
-                <span class="logo-text">Hounter</span>
+                <!-- <div class="footer__additional-logo-prm">
+                    <img src="img/logo.svg" alt="logo">
+                    <span class="logo-text">Hounter</span>
+                </div> -->
+                <div class="header__left-logo">
+                    <img src="img/logo.svg" alt="logo" class="logo">
+                    <span class="header__left-logo-text">Hounter</span>
+                </div>
                 <p>We provide information about properties such as houses, villas and apartments to help people find their dream home</p>
-                <img src="img/facebook-logo.svg" alt="">
-                <img src="img/twitter-logo.svg" alt="">
-                <img src="img/instagram-logo.svg" alt="">
+                <div class="footer__additional-logo-logos">
+                    <img src="img/facebook-logo.svg" alt="">
+                    <img src="img/twitter-logo.svg" alt="">
+                    <img src="img/instagram-logo.svg" alt="">
+                </div>
             </div>
             <div class="footer__additional-links">
                 <div class="footer__additional-links-property">
