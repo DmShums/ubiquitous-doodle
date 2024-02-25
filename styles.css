@@ -371,6 +371,8 @@ main {
 
 .section__featured-house-lower-card-user {
     display: flex;
+    align-items: flex-end;
+    gap: 16px;
 }
 
 .section__featured-house-lower-card-user img {
@@ -380,7 +382,7 @@ main {
     flex-shrink: 0;
 }
 
-.section__featured-house-lower-card-user-text p:nth-child(1) {
+.section__featured-house-lower-card-user-text span:nth-child(1) {
     color: var(--Neutral-900, #0E1735);
     font-size: 18px;
     font-style: normal;
@@ -391,7 +393,7 @@ main {
 
 /* width: 1440px; */
 
-.section__featured-house-lower-card-user-text p:nth-child(2) {
+.section__featured-house-lower-card-user-text span:nth-child(2) {
     color: var(--Neutral-500, #888B97);
     font-size: 14px;
     font-style: normal;
@@ -399,9 +401,24 @@ main {
     line-height: 22px; /* 157.143% */
     align-self: stretch;
 }
+
+.section__featured-house-lower-card-img-icon {
+    margin-left: 16px;
+    margin-top: -50px !important;
+}
+
 /* house-tour */
 
+#house-tour-layer {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+}
+
 .section__house-tour {
+    /* background-image: url("img/house-tour-layer.png");
+    background-repeat: no-repeat;
+    background-position: right; */
     display: flex;
     margin-left: 76px;
     padding-top: 111px;
@@ -445,10 +462,18 @@ main {
     font-style: normal;
     font-weight: 600;
     line-height: 28px; /* 175% */
+    
+}
+
+.section__house-tour-left-detail-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .section__house-tour-left-detail-icons-rw1 {
     display: flex;
+    margin-top: 16px;
 }
 
 .section__house-tour-left-detail-icons-rw2 {
@@ -462,14 +487,42 @@ main {
     flex: 1 0 0;
 }
 
+hr {
+    border: 1px solid var(--Neutral-100, #F0F3FD);
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
 .section__house-tour-left-user {
     display: flex;
+    align-items: center;
     width: 100%;
 }
 
-.section__house-tour-left-user img {
+#section__house-tour-left-user-img1 {
     width: 56px;
     height: 56px;
+    margin-right: 24px;
+}
+
+.section__house-tour-left-user-text {
+    margin-right: 59px;
+}
+
+.section__house-tour-left-user-text span:nth-child(1){
+    color: var(--Neutral-900, #0E1735);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+}
+
+.section__house-tour-left-user-text span:nth-child(2){
+    color: var(--Neutral-500, #888B97);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
 }
 
 .section__house-tour-left-user button{
@@ -487,9 +540,42 @@ main {
     line-height: 22px; /* 157.143% */
 }
 
+.section__house-tour-left-user button img {
+    width: 24px;
+    height: 24px;
+}
+
 .section__house-tour-right iframe {
     border: 0;
+    border-radius: 4px;
 }
+
+#section__house-tour-right-img-1 {
+    border-radius: 4px;
+    width: 296px;
+    height: 168px;
+    margin-left: -40px;
+    margin-top: -125px;
+}
+
+#section__house-tour-right-img-2 {
+    border-radius: 4px;
+    width: 96px;
+    height: 80px;
+    margin-top: -37px;
+}
+
+#section__house-tour-right-img-3 {
+    border-radius: 4px;
+    width: 96px;
+    height: 80px;
+    margin-top: -37px;
+}
+
+/* #oee {
+    margin-left: -40px;
+    margin-top: -125px;
+} */
 
 /* section__about-us */
 
@@ -574,15 +660,18 @@ main {
 }
 
 .section__about-us-sldr-el-user {
+    width: 100%;
     display: flex;
+    align-items: center;
 }
 
 .section__about-us-sldr-el-user img {
     width: 40px;
     height: 40px;
+    margin-right: 24px;
 }
 
-.section__about-us-sldr-el-user-text p:nth-child(1){
+.section__about-us-sldr-el-user-text span:nth-child(1){
     color: var(--Neutral-900, #0E1735);
     font-size: 14px;
     font-style: normal;
@@ -590,7 +679,7 @@ main {
     line-height: 22px; /* 157.143% */
 }
 
-.section__about-us-sldr-el-user-text p:nth-child(2){
+.section__about-us-sldr-el-user-text span:nth-child(2){
     color: var(--Neutral-500, #888B97);
     font-size: 14px;
     font-style: normal;
@@ -601,6 +690,7 @@ main {
 
 .section__about-us-sldr-el-user-rate {
     display: flex;
+    margin-left: auto;
 }
 
 .section__about-us-sldr-el-user-rate img{
