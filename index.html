@@ -10,7 +10,7 @@
     <header>
         <div class="header__left">
             <img src="img/header-color-blur.svg" alt="" class="header__left-bg-img">
-            <div class="header__left-logo">
+            <div class="header__left-logo" id="logo-1">
                 <img src="img/logo.svg" alt="logo" class="logo">
                 <span class="header__left-logo-text">Hounter</span>
             </div>
@@ -239,9 +239,13 @@
 
             </div>
             <div class="section__house-tour-right">
-                <iframe width="420" height="315"
-                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                <iframe width="488" height="416"
+                src="https://www.youtube.com/embed/v2yjbEuDCRY">
                 </iframe>
+                <!-- <video id="houseVideo" width="488" height="416" muted loop>
+                    <source src="img/house.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> -->
                 <img src="img/poster1.jpg" alt="sofa">
                 <img src="img/poster2.jpg" alt="tumbochka">
                 <img src="img/poster3.jpg" alt="chair">
@@ -255,7 +259,7 @@
             </div>
             <div class="section__about-us-sldr">
                 <div class="section__about-us-sldr-el">
-                    <img src="img/reviews0.jpg" alt="">
+                    <img class="section__about-us-sldr-el-img1" src="img/reviews0.jpg" alt="">
                     <article>
                         <p><b>My house sold out fast!</b></p>
                         <p>I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!</p>
@@ -274,7 +278,7 @@
                 </div>
 
                 <div class="section__about-us-sldr-el">
-                    <img src="img/reviews1.jpg" alt="">
+                    <img class="section__about-us-sldr-el-img1" src="img/reviews1.png" alt="">
                     <article>
                         <p><b>Best! I got the house I wanted through Hounter</b></p>
                         <p>Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
@@ -293,7 +297,7 @@
                 </div>
 
                 <div class="section__about-us-sldr-el">
-                    <img src="img/reviews3.jpg" alt="">
+                    <img class="section__about-us-sldr-el-img1" src="img/reviews2.jpg" alt="">
                     <article>
                         <p><b>Through the Hounter, I can get a house for my self</b></p>
                         <p>By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!</p>
@@ -313,6 +317,7 @@
             </div>
         </section>
 
+        <img id="about-bg" src="img/about-bg.png" alt="">
         <section class="section__selling">
             <div class="section__selling-upper">
                 <span>---See tips and trick from our partnership</span>
@@ -330,7 +335,7 @@
                                 <img src="img/about-logo-1.png" alt="">
                                 <span>Dianne Russell</span>
                             </div>
-                            <p><b>The things we need to check when we want to buy a house</b></p>
+                            <p>The things we need to check when we want to buy a house</p>
                             <div class="section__selling-lower-left-card-user-img-time">
                                 <img src="img/time-icon.svg" alt="clock">
                                 <span>4 min read | 25 Apr 2021</span>
@@ -345,7 +350,7 @@
                                 <img src="img/about-logo-2.png" alt="">
                                 <span>Courtney Henry</span>
                             </div>
-                            <p><b>7 Ways to distinguish the quality of the house we want to buy</b></p>
+                            <p>7 Ways to distinguish the quality of the house we want to buy</p>
                             <div class="section__selling-lower-left-card-user-img-time">
                                 <img src="img/time-icon.svg" alt="clock">
                                 <span>6 min read | 24 Apr 2021</span>
@@ -360,7 +365,7 @@
                                 <img src="img/about-logo-3.png" alt="">
                                 <span>Darlene Robertson</span>
                             </div>
-                            <p><b>The best way to know the quality of the house we want to buy</b></p>
+                            <p>The best way to know the quality of the house we want to buy</p>
                             <div class="section__selling-lower-left-card-user-img-time">
                                 <img src="img/time-icon.svg" alt="clock">
                                 <span>2 min read | 24 Apr 2021</span>
@@ -369,7 +374,7 @@
                     </div>
                 </div>
                 <div class="section__selling-lower-right">
-                    <img src="img/about-house-4.jpg" alt="">
+                    <img id="section__selling-lower-right-img1" src="img/about-house-4.jpg" alt="">
                     <div class="section__selling-lower-right-user">
                         <img src="img/about-logo-4.png" alt="">
                         <span>Cameron Williamson</span>
@@ -387,8 +392,6 @@
         </section>
 
         <section class="section__subscribe">
-            <!-- <img src="img/subscribe-bg.png" alt=""> -->
-            <!-- other small images will be handled later -->
             <div class="section__subscribe-dv">
                 <h2>Subscribe For More Info <br>
                     and update from Hounter</h2>
@@ -403,10 +406,6 @@
     <footer>
         <div class="footer__additional">
             <div class="footer__additional-logo">
-                <!-- <div class="footer__additional-logo-prm">
-                    <img src="img/logo.svg" alt="logo">
-                    <span class="logo-text">Hounter</span>
-                </div> -->
                 <div class="header__left-logo">
                     <img src="img/logo.svg" alt="logo" class="logo">
                     <span class="header__left-logo-text">Hounter</span>
@@ -421,7 +420,7 @@
             <div class="footer__additional-links">
                 <div class="footer__additional-links-property">
                     <ul>
-                        <li><b>Property</b></li>
+                        <li>Property</li>
                         <li>House</li>
                         <li>Apartment</li>
                         <li>Villa</li>
@@ -429,7 +428,7 @@
                 </div>
                 <div class="footer__additional-links-article">
                     <ul>
-                        <li><b>Article</b></li>
+                        <li>Article</li>
                         <li>New Article</li>
                         <li>Popular Article</li>
                         <li>Most Read</li>
@@ -438,7 +437,7 @@
                 </div>
                 <div class="footer__additional-links-contact">
                     <ul>
-                        <li><b>Contact</b></li>
+                        <li>Contact</li>
                         <li>2464 Royal Ln. Mesa, New Jersey 45463</li>
                         <li>(671) 555-0110</li>
                         <li>info@hounter.com</li>
@@ -448,5 +447,15 @@
         </div>
     </footer>
     
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var section = document.querySelector('.section__about-us-sldr');
+            var scrollPosition = (section.scrollWidth - section.offsetWidth) / 2;
+            section.scrollLeft = scrollPosition;
+
+            var video = document.getElementById("houseVideo");
+            video.pause();
+        });
+    </script>
 </body>
 </html>
